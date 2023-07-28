@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <!-- https://github.com/grevory/angular-local-storage -->
+    <script src="dist/angular-local-storage.min.js"></script>
+</head>
+<body ng-controller="FiltersController">
+    <p> {{ mi_html }} </p>
+    <p> {{ mi_html | removeHtml }} </p>
+    <p> {{ mi_objecto | json }} </p>
+    <p> {{ costo | currency }} </p>
+</body>
+</html>
